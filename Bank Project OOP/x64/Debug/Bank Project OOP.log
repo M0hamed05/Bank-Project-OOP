@@ -1,0 +1,33 @@
+﻿  Bank Project OOP.cpp
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsString.h(276,36): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Bank%20Project%20OOP.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsString.h(328,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Bank%20Project%20OOP.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsString.h(332,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Bank%20Project%20OOP.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(27,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'Bank%20Project%20OOP.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsInputValidate.h(97,10): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Bank%20Project%20OOP.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\Bank Project OOP.cpp(25,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  clsBankClient.cpp
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsString.h(276,36): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'clsBankClient.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsString.h(328,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'clsBankClient.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsString.h(332,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'clsBankClient.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(27,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'clsBankClient.cpp')
+  
+  Generating Code...
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(210,1): warning C4715: 'clsBankClient::save': not all control paths return a value
+  Bank Project OOP.vcxproj -> E:\Projects\CPP\Bank Project OOP\x64\Debug\Bank Project OOP.exe
