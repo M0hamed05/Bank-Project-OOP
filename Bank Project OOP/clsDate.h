@@ -33,7 +33,7 @@ public:
 	{
 
 		vector <string> vDate;
-		vDate = clsSrtring::split_sentence_extra(sDate, "/");
+		vDate = clsString::split_sentence_extra(sDate, "/");
 
 		_Day = stoi(vDate[0]);
 		_Month = stoi(vDate[1]);

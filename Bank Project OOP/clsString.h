@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class clsSrtring{
+class clsString{
 public:
   static int read_right_number(string massage) {
         int number = 0;

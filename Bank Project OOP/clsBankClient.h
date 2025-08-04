@@ -10,17 +10,18 @@ class clsBankClient : public clsPerson
 {
 private:
 
-	enum enmode { EmptyMode = 0, UpdateMode = 1 };
+	enum enmode { EmptyMode = 0, UpdateMode = 1, AddNewMode = 2 };
 	enmode _mode;
 
 	string _accountnumber;
 	string _pincode;
 	float _accountbalance;
+	bool _markfordelete = false;
 
 	static clsBankClient _convert_line_to_client_object(string line, string seperator = "#//#")
 	{
 		vector<string> vclientdate;
-		vclientdate = clsSrtring::split_sentence_extra(line, seperator);
+		vclientdate = clsString::split_sentence_extra(line, seperator);
 		return clsBankClient(enmode::UpdateMode, vclientdate[0],
 							vclientdate[1], vclientdate[2], 
 							vclientdate[3], vclientdate[4],
@@ -65,17 +66,27 @@ private:
 	}
 
 	static void _save_client_data_to_file(vector<clsBankClient> vclient) {
+
 		fstream myfile;
-		string dataline;
+
 		myfile.open("Clients.txt", ios::out);
-			if (myfile.is_open()) {
-				for (clsBankClient c : vclient) {
-				dataline = _convert_client_object_to_line(c);
-				myfile << dataline << endl;
+
+		string dataline;
+
+		if (myfile.is_open()) {
+
+			for (clsBankClient c : vclient) {
+
+				if (c.markfordelete() == false) {
+					dataline = _convert_client_object_to_line(c);
+					myfile << dataline << endl;
 				}
-				myfile.close();
 			}
 
+			myfile.close();
+
+
+		}
 	}
 
 	void _update() 
@@ -92,7 +103,23 @@ private:
 		_save_client_data_to_file(vclient);
 	}
 
+	void _add_new()
+	{
+		_add_data_line_to_file(_convert_client_object_to_line(*this));
+	}
+
+	void _add_data_line_to_file(string dataline)
+	{
+		fstream myfile;
+		myfile.open("Clients.txt", ios::out | ios::app);
+		if (myfile.is_open()) {
+			myfile << dataline << endl;
+			myfile.close();
+		}
+	}
+
 public:
+
 	clsBankClient(enmode mode, string fristname, string lastname, string email, string phone,
 		string accountnumber, string pincode, float accountbalance) :
 		clsPerson(fristname, lastname, email, phone)
@@ -133,7 +160,11 @@ public:
 	}
 	__declspec(property(get = get_accountbalance, put = set_accountbalance))float accountbalance;
 
-	void print()
+	bool markfordelete() {
+		return _markfordelete;
+	}
+
+	/*void print()
 	{
 		cout << "\nClient Card:";
 		cout << "\n___________________";
@@ -148,6 +179,7 @@ public:
 		cout << "\n___________________\n";
 
 	}
+	*/
 
 	static clsBankClient find(string accountnumber)
 	{
@@ -195,7 +227,7 @@ public:
 		return	_get_empty_client_object();
 	}
 
-	enum enSaveResults { FialdEmptyObject=0, Succeeeded=1};
+	enum enSaveResults { FialdEmptyObject=0, Succeeeded=1, fiad_accout_exist=2};
 
 	enSaveResults save() {
 		switch (_mode) {
@@ -205,13 +237,80 @@ public:
 		case enmode::UpdateMode:
 			_update();
 			return enSaveResults::Succeeeded;
+
+		case enmode::AddNewMode:
+			if (clsBankClient::is_client_exist(_accountnumber))
+			{
+				return enSaveResults::fiad_accout_exist;
+			}
+			else
+			{
+				_add_new();
+				_mode = enmode::UpdateMode;
+				return enSaveResults::Succeeeded;
+			}
 		}
 	}
+
 	static bool is_client_exist(string accountnumber)
 	{
 		clsBankClient client = find(accountnumber);
 
 		return(!client.is_empty());
+	}
+
+	static clsBankClient get_add_new_client_object(string accountnumber)
+	{
+		return clsBankClient(enmode::AddNewMode, "", "", "", "",accountnumber, "", 0);
+	}
+
+	static vector <clsBankClient> get_client_list()
+	{
+		return _load_client_data_from_file();
+	}
+
+	void deposit(double amount) {
+		_accountbalance += amount;
+		save();
+	}
+
+	bool withdraw(double amount) {
+
+		if (amount > accountbalance) {
+			return false;
+		}
+		_accountbalance -= amount;
+		save();
+	}
+
+	bool delete_client() {
+		vector <clsBankClient> vclients;
+		vclients = _load_client_data_from_file();
+
+		for (clsBankClient& c : vclients) {
+			if (c.accountnumber() == _accountnumber) {
+				c._markfordelete = true;
+				break;
+			}
+		}
+		
+		_save_client_data_to_file(vclients);
+
+		*this = _get_empty_client_object();
+		return true;
+	}
+
+	static float get_total_balances() 
+	{
+		vector <clsBankClient> vclient = get_client_list();
+		double total = 0;
+
+		for (clsBankClient client : vclient)
+		{
+			total += client.accountbalance;
+		}
+
+		return total;
 	}
 
 };

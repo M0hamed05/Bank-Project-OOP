@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|solutionrelative:Bank Project OOP\\Bank Project OOP.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsBankClient.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|solutionrelative:Bank Project OOP\\clsBankClient.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsPerson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|solutionrelative:Bank Project OOP\\clsPerson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsManageUsers.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|solutionrelative:Bank Project OOP\\clsManageUsers.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "clsPerson.h",
-              "DocumentMoniker": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsPerson.h",
-              "RelativeDocumentMoniker": "Bank Project OOP\\clsPerson.h",
-              "ToolTip": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsPerson.h",
-              "RelativeToolTip": "Bank Project OOP\\clsPerson.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-02T07:53:43.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "clsBankClient.h",
-              "DocumentMoniker": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsBankClient.h",
-              "RelativeDocumentMoniker": "Bank Project OOP\\clsBankClient.h",
-              "ToolTip": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsBankClient.h",
-              "RelativeToolTip": "Bank Project OOP\\clsBankClient.h",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAIwEAAAAARAAAAAAAAAA==",
+              "Title": "clsManageUsers.h",
+              "DocumentMoniker": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsManageUsers.h",
+              "RelativeDocumentMoniker": "Bank Project OOP\\clsManageUsers.h",
+              "ToolTip": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsManageUsers.h*",
+              "RelativeToolTip": "Bank Project OOP\\clsManageUsers.h*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAAHQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-02T08:18:42.393Z",
+              "WhenOpened": "2025-08-04T02:26:14.14Z",
               "EditorCaption": ""
             },
             {
@@ -62,7 +45,7 @@
               "RelativeDocumentMoniker": "Bank Project OOP\\Bank Project OOP.cpp",
               "ToolTip": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\Bank Project OOP.cpp",
               "RelativeToolTip": "Bank Project OOP\\Bank Project OOP.cpp",
-              "ViewState": "AgIAADkAAAAAAAAAAAAnwBsAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-02T07:52:55.721Z",
               "EditorCaption": ""
