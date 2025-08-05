@@ -45,7 +45,7 @@ public:
             cout << "\nclient with [" << accountnumber << "] doesn't exist, enter anthor : ";
             accountnumber = _read_accountnumber();
         }
-        clsBankClient client = clsBankClient::find(accountnumber);
+        clsBankClient client = clsBankClient::Find(accountnumber);
         _print_client(client);
 
         double amount = 0;

@@ -26,7 +26,7 @@ public:
             UserName = clsInputValidate::ReadString();
         }
 
-        clsUser User1 = clsUser::find(UserName);
+        clsUser User1 = clsUser::Find(UserName);
         clsUser::print_user(User1);
 
         cout << "\nAre you sure you want to delete this User y/n? ";

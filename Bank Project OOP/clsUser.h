@@ -1,10 +1,13 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "clsPerson.h"
-#include "clsString.h"
 #include <vector>
 #include <fstream>
+
+#include "clsPerson.h"
+#include "clsString.h"
+#include "clsDate.h"
+#include "clsUtil.h"
 
 using namespace std;
 class clsUser : public clsPerson
@@ -24,6 +27,16 @@ private:
         vUserData = clsString::split_sentence_extra(Line, Seperator);
 
         return clsUser(enMode::UpdateMode, vUserData[0], vUserData[1], vUserData[2],
+            vUserData[3], vUserData[4], clsUtil::decrypt_text(vUserData[5]), stoi(vUserData[6]));
+
+    }
+
+    static clsUser _convert_login_record_to_object(string Line, string Seperator = "#//#")
+    {
+        vector<string> vUserData;
+        vUserData = clsString::split_sentence_extra(Line, Seperator);
+
+        return clsUser(enMode::UpdateMode, vUserData[0], vUserData[1], vUserData[2],
             vUserData[3], vUserData[4], vUserData[5], stoi(vUserData[6]));
 
     }
@@ -37,7 +50,7 @@ private:
         UserRecord += User.email + Seperator;
         UserRecord += User.phone + Seperator;
         UserRecord += User.username + Seperator;
-        UserRecord += User.password + Seperator;
+        UserRecord += clsUtil::encrypt_text(User.password) + Seperator;
         UserRecord += to_string(User.permissions);
 
         return UserRecord;
@@ -152,7 +165,8 @@ public:
 
     enum enPermissions {
         eAll = -1, pListClients = 1, pAddNewClient = 2, pDeleteClient = 4,
-        pUpdateClients = 8, pFindClient = 16, pTranactions = 32, pManageUsers = 64
+        pUpdateClients = 8, pFindClient = 16, pTranactions = 32, pManageUsers = 64,
+        pShowLoginRegister = 128
     };
 
     clsUser(enMode Mode, string FirstName, string LastName,
@@ -211,7 +225,7 @@ public:
     }
     __declspec(property(get = GetPermissions, put = SetPermissions)) int permissions;
 
-    static clsUser find(string UserName)
+    static clsUser Find(string UserName)
     {
         fstream MyFile;
         MyFile.open("Users.txt", ios::in);//read Mode
@@ -236,7 +250,7 @@ public:
         return _get_empty_user_object();
     }
 
-    static clsUser find(string UserName, string Password)
+    static clsUser Find(string UserName, string Password)
     {
 
         fstream MyFile;
@@ -309,7 +323,7 @@ public:
     static bool is_user_exists(string UserName)
     {
 
-        clsUser User = clsUser::find(UserName);
+        clsUser User = clsUser::Find(UserName);
         return (!User.is_empty());
     }
 
@@ -362,6 +376,17 @@ public:
 
     }
 
+    bool CheckAccessPermission(enPermissions Permission)
+    {
+        if (this->permissions == enPermissions::eAll)
+            return true;
+
+        if ((Permission & this->permissions) == Permission)
+            return true;
+        else
+            return false;
+
+    }
 
 };
 

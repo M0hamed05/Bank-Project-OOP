@@ -57,7 +57,7 @@ public:
             accountnumber = clsInputValidate::ReadString();
         }
 
-        clsBankClient client = clsBankClient::find(accountnumber);
+        clsBankClient client = clsBankClient::Find(accountnumber);
 
         _print_client(client);
         cout << "\n\nUpdate Client Info : ";

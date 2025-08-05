@@ -6,6 +6,7 @@
 #include "clsPerson.h"
 #include "clsString.h"
 
+
 class clsBankClient : public clsPerson
 {
 private:
@@ -181,7 +182,7 @@ public:
 	}
 	*/
 
-	static clsBankClient find(string accountnumber)
+	static clsBankClient Find(string accountnumber)
 	{
 		vector <clsBankClient> vClients;
 		 
@@ -204,7 +205,7 @@ public:
 		return	_get_empty_client_object();
 	}
 
-	static clsBankClient find(string accountnumber,string pincode)
+	static clsBankClient Find(string accountnumber,string pincode)
 	{
 		vector <clsBankClient> vClients;
 
@@ -254,7 +255,7 @@ public:
 
 	static bool is_client_exist(string accountnumber)
 	{
-		clsBankClient client = find(accountnumber);
+		clsBankClient client = Find(accountnumber);
 
 		return(!client.is_empty());
 	}
@@ -281,6 +282,7 @@ public:
 		}
 		_accountbalance -= amount;
 		save();
+		return true;
 	}
 
 	bool delete_client() {

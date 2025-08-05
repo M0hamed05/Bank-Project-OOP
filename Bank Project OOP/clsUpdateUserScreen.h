@@ -13,98 +13,6 @@ class clsUpdateUserScreen :protected clsScreen
 {
 private:
 
-    static int read_premissions_to_set()
-    {
-
-        int Permissions = 0;
-        char Answer = 'n';
-
-
-        cout << "\nDo you want to give full access? y/n? ";
-        cin >> Answer;
-        if (Answer == 'y' || Answer == 'Y')
-        {
-            return -1;
-        }
-
-        cout << "\nDo you want to give access to : \n ";
-
-        cout << "\nShow Client List? y/n? ";
-        cin >> Answer;
-        if (Answer == 'y' || Answer == 'Y')
-        {
-
-
-            Permissions += clsUser::enPermissions::pListClients;
-        }
-
-        cout << "\nAdd New Client? y/n? ";
-        cin >> Answer;
-        if (Answer == 'y' || Answer == 'Y')
-        {
-            Permissions += clsUser::enPermissions::pAddNewClient;
-        }
-
-        cout << "\nDelete Client? y/n? ";
-        cin >> Answer;
-        if (Answer == 'y' || Answer == 'Y')
-        {
-            Permissions += clsUser::enPermissions::pDeleteClient;
-        }
-
-        cout << "\nUpdate Client? y/n? ";
-        cin >> Answer;
-        if (Answer == 'y' || Answer == 'Y')
-        {
-            Permissions += clsUser::enPermissions::pUpdateClients;
-        }
-
-        cout << "\nFind Client? y/n? ";
-        cin >> Answer;
-        if (Answer == 'y' || Answer == 'Y')
-        {
-            Permissions += clsUser::enPermissions::pFindClient;
-        }
-
-        cout << "\nTransactions? y/n? ";
-        cin >> Answer;
-        if (Answer == 'y' || Answer == 'Y')
-        {
-            Permissions += clsUser::enPermissions::pTranactions;
-        }
-
-        cout << "\nManage Users? y/n? ";
-        cin >> Answer;
-        if (Answer == 'y' || Answer == 'Y')
-        {
-            Permissions += clsUser::enPermissions::pManageUsers;
-        }
-
-        return Permissions;
-
-    }
-
-    static void _read_user_info(clsUser& User)
-    {
-        cout << "\nEnter FirstName: ";
-        User.fristname = clsInputValidate::ReadString();
-
-        cout << "\nEnter LastName: ";
-        User.lastname = clsInputValidate::ReadString();
-
-        cout << "\nEnter Email: ";
-        User.email = clsInputValidate::ReadString();
-
-        cout << "\nEnter Phone: ";
-        User.phone = clsInputValidate::ReadString();
-
-        cout << "\nEnter Password: ";
-        User.password = clsInputValidate::ReadString();
-
-        cout << "\nEnter Permission: ";
-        User.permissions = read_premissions_to_set();
-    }
-
     static int _ReadPermissionsToSet()
     {
 
@@ -172,8 +80,37 @@ private:
             Permissions += clsUser::enPermissions::pManageUsers;
         }
 
+        cout << "\nShow Login Register? y/n? ";
+        cin >> Answer;
+        if (Answer == 'y' || Answer == 'Y')
+        {
+            Permissions += clsUser::enPermissions::pShowLoginRegister;
+        }
+
         return Permissions;
 
+    }
+
+
+    static void _read_user_info(clsUser& User)
+    {
+        cout << "\nEnter FirstName: ";
+        User.fristname = clsInputValidate::ReadString();
+
+        cout << "\nEnter LastName: ";
+        User.lastname = clsInputValidate::ReadString();
+
+        cout << "\nEnter Email: ";
+        User.email = clsInputValidate::ReadString();
+
+        cout << "\nEnter Phone: ";
+        User.phone = clsInputValidate::ReadString();
+
+        cout << "\nEnter Password: ";
+        User.password = clsInputValidate::ReadString();
+
+        cout << "\nEnter Permission: ";
+        User.permissions = _ReadPermissionsToSet();
     }
 
 public:
@@ -194,7 +131,7 @@ public:
             UserName = clsInputValidate::ReadString();
         }
 
-        clsUser User1 = clsUser::find(UserName);
+        clsUser User1 = clsUser::Find(UserName);
 
         clsUser::print_user(User1);
 

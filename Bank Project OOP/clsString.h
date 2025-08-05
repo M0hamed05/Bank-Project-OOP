@@ -22,7 +22,7 @@ public:
 
   static string read_string() {
         string sentence;
-        getline(cin, sentence);
+        getline(cin>>ws, sentence);
         return sentence;
     }
   

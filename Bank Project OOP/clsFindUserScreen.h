@@ -26,7 +26,7 @@ public:
             UserName = clsInputValidate::ReadString();
         }
 
-        clsUser User1 = clsUser::find(UserName);
+        clsUser User1 = clsUser::Find(UserName);
 
         if (!User1.is_empty())
         {

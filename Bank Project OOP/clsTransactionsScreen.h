@@ -8,16 +8,23 @@
 #include"clsDepositScreen.h"
 #include"clsWithdrawScreen.h"
 #include"clsTotalBalances.h"
+#include"clsTransferScreen.h"
+
+using namespace std;
 
 class clsTranscationsScreen :protected clsScreen
 {
 private:
-	enum entranscationChoice { eDeposit = 1, eWithdraw = 2, eShowTotalBalances = 3, eShowMainMenue = 4 };
+    enum entranscationChoice 
+    {
+        eDeposit = 1, eWithdraw = 2, eShowTotalBalances = 3, eTransfer = 4,
+        eTransferLog = 5, eShowMainMenue = 6
+    };
 
 	static short read_transations_menue_option()
 	{
 		cout << setw(37) << left << "" << "Choose choice :  ";
-		short choice = clsInputValidate::ReadShortNumberBetween(1, 4, "Please enter a numer between 1 and 4");
+		short choice = clsInputValidate::ReadShortNumberBetween(1, 6, "Please enter a numer between 1 and 6");
 		return choice;
 	}
 
@@ -34,6 +41,15 @@ private:
     static void _show_total_balances_screen()
     {
         clsTotalBalances::show_total_balances();
+    }
+
+    static void _show_transfer_screen() 
+    {
+        clsTransferScreen::show_transfer_screen();
+    }
+
+    static void _show_transfer_log() {
+        clsTransferScreen::show_transfer_log();
     }
 
     static void _go_back_to_transcations_menue()
@@ -72,6 +88,21 @@ private:
             break;
         }
 
+        case entranscationChoice::eTransfer:
+        {
+            system("cls");
+            _show_transfer_screen();
+            _go_back_to_transcations_menue();
+            break;
+        }
+
+        case entranscationChoice::eTransferLog:
+        {
+            system("cls");
+            _show_transfer_log();
+            _go_back_to_transcations_menue();
+            break;
+        }
 
         case entranscationChoice::eShowMainMenue:
         {
@@ -87,8 +118,6 @@ public:
 
     static void show_transactions_menue()
     {
-
-
         system("cls");
         _draw_screen_header("\t  Transactions Screen");
 
@@ -98,7 +127,9 @@ public:
         cout << setw(37) << left << "" << "\t[1] Deposit.\n";
         cout << setw(37) << left << "" << "\t[2] Withdraw.\n";
         cout << setw(37) << left << "" << "\t[3] Total Balances.\n";
-        cout << setw(37) << left << "" << "\t[4] Main Menue.\n";
+        cout << setw(37) << left << "" << "\t[4] Transfer.\n";
+        cout << setw(37) << left << "" << "\t[5] Transfer Log.\n";
+        cout << setw(37) << left << "" << "\t[6] Main Menue.\n";
         cout << setw(37) << left << "" << "===========================================\n";
 
         _preform_transcation_option((entranscationChoice)read_transations_menue_option());

@@ -60,7 +60,7 @@ public:
 
         }
 
-        clsBankClient client = clsBankClient::find(accountnumber);
+        clsBankClient client = clsBankClient::Find(accountnumber);
 
         if (!client.is_empty()) {
             cout << "\nClient found\n";

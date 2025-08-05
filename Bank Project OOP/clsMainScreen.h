@@ -4,6 +4,7 @@
 
 #include "clsScreen.h"
 #include "clsInputValidate.h"
+#include"clsUser.h"
 
 #include"clsClientListScreen.h"
 #include"clsAddNewClientScreen.h"
@@ -12,6 +13,8 @@
 #include"clsFindClientScreen.h"
 #include"clsTransactionsScreen.h"
 #include"clsManageUsers.h"
+#include"Global.h"
+#include"clsShowLoginRegister.h"
 using namespace std;
 
 class clsMainScreen :protected clsScreen
@@ -20,13 +23,13 @@ private:
     enum enMainMenueOptions {
         eListClients = 1, eAddNewClient = 2, eDeleteClient = 3,
         eUpdateClient = 4, eFindClient = 5, eShowTransactionsMenue = 6,
-        eManageUsers = 7, eExit = 8
+        eManageUsers = 7, eLoginRegister=8,eExit = 9
     };
 
     static short _read_main_menue_option()
     {
-        cout << setw(37) << left << "" << "Choose what do you want to do? [1 to 8]? ";
-        short Choice = clsInputValidate::ReadIntNumberBetween(1, 8, "Enter Number between 1 to 8? ");
+        cout << setw(37) << left << "" << "Choose what do you want to do? [1 to 9]? ";
+        short Choice = clsInputValidate::ReadIntNumberBetween(1, 9, "Enter Number between 1 to 9? ");
         return Choice;
     }
 
@@ -40,43 +43,79 @@ private:
 
     static void _show_allclients_screen()
     {
+        if (!CheckAccessRights(clsUser::enPermissions::pListClients))
+        {
+            return;
+        }
         clsClientListScreen::show_client_list();
     }
 
     static void _show_add_client_screen()
     {
+        if (!CheckAccessRights(clsUser::enPermissions::pAddNewClient))
+        {
+            return;
+        }
         clsAddNewClientScreen::add_new_client();
     }
 
     static void _show_delete_client_screen()
     {
+        if (!CheckAccessRights(clsUser::enPermissions::pDeleteClient))
+        {
+            return;
+        }
         clsDeleteClientScreen::delete_client();
     }
 
     static void _show_update_client_screen()
     {
+        if (!CheckAccessRights(clsUser::enPermissions::pUpdateClients))
+        {
+            return;
+        }
         clsUpdateClientScreen::update_client();
     }
 
     static void _show_find_client_screen()
     {
+        if (!CheckAccessRights(clsUser::enPermissions::pFindClient))
+        {
+            return;
+        }
         clsFindClientScreen::find_clinet();
     }
 
     static void _show_transcations_menue()
     {
+        if (!CheckAccessRights(clsUser::enPermissions::pTranactions))
+        {
+            return;
+        }
         clsTranscationsScreen::show_transactions_menue();
     }
 
     static void _show_manage_users_menue()
     {
+        if (!CheckAccessRights(clsUser::enPermissions::pManageUsers))
+        {
+            return;
+        }
         clsManageUsersScreen::ShowManageUsersMenue();
     }
 
-    static void _show_end_screen()
+    static void _show_Login_Register_screen() 
     {
-        cout << "\nEnd Screen Will be here...\n";
+        if (!CheckAccessRights(clsUser::enPermissions::pShowLoginRegister))
+        {
+            return;
+        }
+        clsShowLoginRegister::show_login_regsiter();
+    }
 
+    static void _logout()
+    {
+        CurrentUser = clsUser::Find("","");
     }
 
     static void _preform_main_menue_option(enMainMenueOptions MainMenueOption)
@@ -126,17 +165,21 @@ private:
             _go_back_to_main_menue();
             break;
 
+        case enMainMenueOptions::eLoginRegister:
+            system("cls");
+            _show_Login_Register_screen();
+            _go_back_to_main_menue();
+            break;
+
         case enMainMenueOptions::eExit:
             system("cls");
-            _show_end_screen();
+            _logout();
             //Login();
 
             break;
         }
 
     }
-
-
 
 public:
 
@@ -157,7 +200,8 @@ public:
         cout << setw(37) << left << "" << "\t[5] Find Client.\n";
         cout << setw(37) << left << "" << "\t[6] Transactions.\n";
         cout << setw(37) << left << "" << "\t[7] Manage Users.\n";
-        cout << setw(37) << left << "" << "\t[8] Logout.\n";
+        cout << setw(37) << left << "" << "\t[8] Login Register.\n";
+        cout << setw(37) << left << "" << "\t[9] Logout.\n";
         cout << setw(37) << left << "" << "===========================================\n";
 
         _preform_main_menue_option((enMainMenueOptions)_read_main_menue_option());

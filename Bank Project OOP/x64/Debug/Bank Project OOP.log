@@ -8,16 +8,7 @@ E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsString.h(328,17): warning C
 E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsString.h(332,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'Bank%20Project%20OOP.cpp')
   
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(28,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'Bank%20Project%20OOP.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(273,22): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'Bank%20Project%20OOP.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(282,22): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'Bank%20Project%20OOP.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(313,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsUtil.h(64,5): warning C4102: 'defualt': unreferenced label
   (compiling source file 'Bank%20Project%20OOP.cpp')
   
 E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsInputValidate.h(115,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
@@ -26,7 +17,16 @@ E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsInputValidate.h(115,16): wa
 E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsInputValidate.h(119,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Bank%20Project%20OOP.cpp')
   
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsUtil.h(64,5): warning C4102: 'defualt': unreferenced label
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(29,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'Bank%20Project%20OOP.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(274,22): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'Bank%20Project%20OOP.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(283,22): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'Bank%20Project%20OOP.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(315,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Bank%20Project%20OOP.cpp')
   
 E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsAddNewClientScreen.h(31,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
@@ -41,51 +41,6 @@ E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsFindClientScreen.h(31,66): 
 E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsTotalBalances.h(53,60): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   (compiling source file 'Bank%20Project%20OOP.cpp')
   
-  clsMainScreen.cpp
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsString.h(276,36): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsString.h(328,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsString.h(332,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsInputValidate.h(115,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsInputValidate.h(119,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(28,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(273,22): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(282,22): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(313,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsAddNewClientScreen.h(31,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsUpdateClientScreen.h(30,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsFindClientScreen.h(31,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsUtil.h(64,5): warning C4102: 'defualt': unreferenced label
-  (compiling source file 'clsMainScreen.cpp')
-  
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsTotalBalances.h(53,60): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-  (compiling source file 'clsMainScreen.cpp')
-  
-  Generating Code...
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(253,1): warning C4715: 'clsBankClient::save': not all control paths return a value
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(284,1): warning C4715: 'clsBankClient::withdraw': not all control paths return a value
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsUser.h(307,1): warning C4715: 'clsUser::save': not all control paths return a value
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(254,1): warning C4715: 'clsBankClient::save': not all control paths return a value
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsUser.h(321,1): warning C4715: 'clsUser::save': not all control paths return a value
   Bank Project OOP.vcxproj -> E:\Projects\CPP\Bank Project OOP\x64\Debug\Bank Project OOP.exe

@@ -17,6 +17,9 @@ private:
 	short _Day = 1;
 	short _Month = 1;
 	short _Year = 1900;
+	short _hour = 1;
+	short _min = 1;
+	short _sec = 1;
 
 public:
 
@@ -27,12 +30,16 @@ public:
 		_Day = now->tm_mday;
 		_Month = now->tm_mon + 1;
 		_Year = now->tm_year + 1900;
+		_hour = now->tm_hour;
+		_min = now->tm_min;
+		_sec = now->tm_sec;
 	}
 
 	clsDate(string sDate)
 	{
 
 		vector <string> vDate;
+
 		vDate = clsString::split_sentence_extra(sDate, "/");
 
 		_Day = stoi(vDate[0]);
@@ -86,6 +93,33 @@ public:
 		return _Year;
 	}
 	__declspec(property(get = GetYear, put = SetYear)) short Year;
+
+	void Sethour(short h) {
+		_hour = h;
+	}
+
+	short Gethour() {
+		return _hour;
+	}
+	__declspec(property(get = Gethour, put = Sethour)) short hour;
+
+	void Setmin(short m) {
+		_min = m;
+	}
+
+	short Getmin() {
+		return _min;
+	}
+	__declspec(property(get = Getmin, put = Setmin)) short min;
+
+	void Setsec(short sec) {
+		_sec = sec;
+	}
+
+	short Getsec() {
+		return _sec;
+	}
+	__declspec(property(get = Getsec, put = Setsec)) short second;
 
 	void Print()
 	{
@@ -148,6 +182,12 @@ public:
 	static string DateToString(clsDate Date)
 	{
 		return  to_string(Date.Day) + "/" + to_string(Date.Month) + "/" + to_string(Date.Year);
+	}
+
+	static string date_to_string_with_hours(clsDate Date)
+	{
+		return  to_string(Date.Day) + "/" + to_string(Date.Month) + "/" + to_string(Date.Year) + " - "
+			+ to_string(Date.hour) + ":" + to_string(Date.min) + ":" + to_string(Date.second);
 	}
 
 	string DateToString()

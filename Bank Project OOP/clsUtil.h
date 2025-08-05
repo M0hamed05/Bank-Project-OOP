@@ -214,7 +214,6 @@ public:
 
     }
 
-
     static string NumberToText(int Number)
     {
 
@@ -281,7 +280,24 @@ public:
 
     }
 
+    static string encrypt_text(string text, short encryptionkey=2)
+    {
 
+        for (int i = 0; i <= text.length(); i++)
+        {
+            text[i] = char((int)text[i] + encryptionkey);
+        }
+        return text;
+    }
+
+    static string decrypt_text(string text, short encryptionkey = 2)
+    {
+        for (int i = 0; i <= text.length(); i++)
+        {
+            text[i] = char((int)text[i] - encryptionkey);
+        }
+        return text;
+    }
 
 };
 

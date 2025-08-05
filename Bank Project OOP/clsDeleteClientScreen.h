@@ -36,7 +36,7 @@ public:
             cout << "\n Account number is not found, please enter anthor one : ";
             accountnumber = clsInputValidate::ReadString();
         }
-        clsBankClient client = clsBankClient::find(accountnumber);
+        clsBankClient client = clsBankClient::Find(accountnumber);
         _print_client(client);
         cout << "\n are you want to delete this clinet y/n ? ";
         char ans = 'n';
