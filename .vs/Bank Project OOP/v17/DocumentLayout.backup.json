@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "E:\\Projects\\CPP\\Bank Project OOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsCurrencyCalculator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|solutionrelative:Bank Project OOP\\clsCurrencyCalculator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsCurrency.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|solutionrelative:Bank Project OOP\\clsCurrency.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\Bank Project OOP.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|solutionrelative:Bank Project OOP\\Bank Project OOP.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -31,40 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsCurrencyCalculator.h",
-              "DocumentMoniker": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsCurrencyCalculator.h",
-              "RelativeDocumentMoniker": "Bank Project OOP\\clsCurrencyCalculator.h",
-              "ToolTip": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsCurrencyCalculator.h",
-              "RelativeToolTip": "Bank Project OOP\\clsCurrencyCalculator.h",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-06T15:32:03.753Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsCurrency.h",
-              "DocumentMoniker": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsCurrency.h",
-              "RelativeDocumentMoniker": "Bank Project OOP\\clsCurrency.h",
-              "ToolTip": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsCurrency.h",
-              "RelativeToolTip": "Bank Project OOP\\clsCurrency.h",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAHwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-06T14:25:54.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Bank Project OOP.cpp",
               "DocumentMoniker": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\Bank Project OOP.cpp",
               "RelativeDocumentMoniker": "Bank Project OOP\\Bank Project OOP.cpp",
               "ToolTip": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\Bank Project OOP.cpp",
               "RelativeToolTip": "Bank Project OOP\\Bank Project OOP.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-06T14:28:25.272Z",
+              "WhenOpened": "2025-08-06T17:57:27.138Z",
               "EditorCaption": ""
             }
           ]

@@ -44,7 +44,7 @@ E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsTotalBalances.h(53,60): war
 E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsUpdateCurrencyRate.h(24,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Bank%20Project%20OOP.cpp')
   
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsCurrencyCalculator.h(40,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsCurrencyCalculator.h(46,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Bank%20Project%20OOP.cpp')
   
 E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(258,1): warning C4715: 'clsBankClient::save': not all control paths return a value
