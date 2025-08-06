@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "E:\\Projects\\CPP\\Bank Project OOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsLoginScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|solutionrelative:Bank Project OOP\\clsLoginScreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\Bank Project OOP.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0D075CCE-BA80-4365-9092-09BBD637569A}|Bank Project OOP\\Bank Project OOP.vcxproj|solutionrelative:Bank Project OOP\\Bank Project OOP.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -27,19 +23,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsLoginScreen.h",
-              "DocumentMoniker": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsLoginScreen.h",
-              "RelativeDocumentMoniker": "Bank Project OOP\\clsLoginScreen.h",
-              "ToolTip": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\clsLoginScreen.h",
-              "RelativeToolTip": "Bank Project OOP\\clsLoginScreen.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-08-05T20:07:46.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Bank Project OOP.cpp",
               "DocumentMoniker": "E:\\Projects\\CPP\\Bank Project OOP\\Bank Project OOP\\Bank Project OOP.cpp",
               "RelativeDocumentMoniker": "Bank Project OOP\\Bank Project OOP.cpp",
@@ -47,7 +30,7 @@
               "RelativeToolTip": "Bank Project OOP\\Bank Project OOP.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-02T07:52:55.721Z",
+              "WhenOpened": "2025-08-06T14:28:25.272Z",
               "EditorCaption": ""
             }
           ]

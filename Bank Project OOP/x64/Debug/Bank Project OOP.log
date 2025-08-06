@@ -20,13 +20,13 @@ E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsInputValidate.h(119,26): wa
 E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(29,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Bank%20Project%20OOP.cpp')
   
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(274,22): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(278,22): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Bank%20Project%20OOP.cpp')
   
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(283,22): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(287,22): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Bank%20Project%20OOP.cpp')
   
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(315,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(319,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Bank%20Project%20OOP.cpp')
   
 E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsAddNewClientScreen.h(31,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
@@ -41,6 +41,12 @@ E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsFindClientScreen.h(31,66): 
 E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsTotalBalances.h(53,60): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   (compiling source file 'Bank%20Project%20OOP.cpp')
   
-E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(254,1): warning C4715: 'clsBankClient::save': not all control paths return a value
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsUpdateCurrencyRate.h(24,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'Bank%20Project%20OOP.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsCurrencyCalculator.h(40,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'Bank%20Project%20OOP.cpp')
+  
+E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsBankClient.h(258,1): warning C4715: 'clsBankClient::save': not all control paths return a value
 E:\Projects\CPP\Bank Project OOP\Bank Project OOP\clsUser.h(321,1): warning C4715: 'clsUser::save': not all control paths return a value
   Bank Project OOP.vcxproj -> E:\Projects\CPP\Bank Project OOP\x64\Debug\Bank Project OOP.exe

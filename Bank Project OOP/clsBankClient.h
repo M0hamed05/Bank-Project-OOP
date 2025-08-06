@@ -135,6 +135,7 @@ public:
 	{
 		return (_mode == enmode::EmptyMode);
 	}
+
 	string accountnumber()
 	{
 		return _accountnumber;
@@ -144,6 +145,7 @@ public:
 	{
 		_pincode = pincode;
 	}
+
 	string get_pincode()
 	{
 		return _pincode;
@@ -154,11 +156,13 @@ public:
 	{
 		_accountbalance = accountbalance;
 	}
+
 	float get_accountbalance()
 	{
 		return _accountbalance;
 
 	}
+
 	__declspec(property(get = get_accountbalance, put = set_accountbalance))float accountbalance;
 
 	bool markfordelete() {

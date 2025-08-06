@@ -104,5 +104,23 @@
     <ClInclude Include="clsTransferScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="clsCurrency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsCurrencyScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsListCurrency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsFindCurrency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsUpdateCurrencyRate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clsCurrencyCalculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

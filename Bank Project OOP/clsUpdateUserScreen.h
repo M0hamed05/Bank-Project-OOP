@@ -87,6 +87,13 @@ private:
             Permissions += clsUser::enPermissions::pShowLoginRegister;
         }
 
+        cout << "\nShow Currency Exchange? y/n? ";
+        cin >> Answer;
+        if (Answer == 'y' || Answer == 'Y')
+        {
+            Permissions += clsUser::enPermissions::pCurrency;
+        }
+
         return Permissions;
 
     }
